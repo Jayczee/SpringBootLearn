@@ -1,0 +1,23 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://124.222.114.100:3306/testdb
+    username: root
+    password: jhkd5960795.
+
+logging:
+  level:
+    com.jayczee: debug
+    org.springframework: info
+
+mybatis:
+  #对实体类起别名
+  type-aliases-package: com.jayczee.pojo
+  #映射文件路径
+#  mapper-locations: com.jayczee.mapper
+  #日志配置
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
